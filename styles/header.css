@@ -14,10 +14,7 @@
     align-items: center;
     position: relative;
 }
-.logo__costa{
-    width: 44px;
-    height: 44px;
-}
+
 .container{
     display: flex;
     align-items: center;
@@ -57,13 +54,52 @@
 .titulo__cabecalho{
     display: none;
 }
+.opcoes{
+    display: none;
+}
 
 @media screen and (min-width: 1024px) {
     .titulo__cabecalho{
         font-size: 30px;
         font-family: var(--font-secundaria);
-        color: rgb(43, 226, 101);
+        color: rgb(73, 56, 42);
         display: block;
     }
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--font-secundaria);
+        font-size: 30px;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+    .opcoes{
+        display: flex;
+    }
+    .opcoes__item{
+        padding: 0 1em;
+    }
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .container__imagem--transparente{
+        display: none;
+    }
+    .cabecalho__menu-hamburguer{
+        display: none;
+        
+    }
+    .opcoes__botao:checked~.lista-menu{
+        display: block;
+        width: auto;
+    }
+    .opcoes__botao{
+        display: none;
+    }
+
 
 }
